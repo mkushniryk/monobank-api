@@ -11,6 +11,9 @@
     <RepositoryUrl>https://github.com/TertAlex/Monobank.Api</RepositoryUrl>
     <PackageProjectUrl>https://github.com/TertAlex/Monobank.Api</PackageProjectUrl>
     <PackageIconUrl>https://api.monobank.ua/docs/images/logo.png</PackageIconUrl>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
