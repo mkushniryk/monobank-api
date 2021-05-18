@@ -1,4 +1,4 @@
-﻿namespace Sentinelab.Monobank.Api.Models.Requests
+﻿namespace Monobank.Api.Client.Models.Requests
 {
     public class SetWebHookRequest
     {

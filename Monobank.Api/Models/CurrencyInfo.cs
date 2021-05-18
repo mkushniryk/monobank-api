@@ -1,34 +1,34 @@
-﻿namespace Sentinelab.Monobank.Api.Models
+﻿namespace Monobank.Api.Client.Models
 {
     public class CurrencyInfo
     {
         /// <summary>
-        /// Код валюти рахунку відповідно ISO 4217
+        /// Account currency code according to ISO 4217
         /// </summary>
         public int CurrencyCodeA { get; set; }
 
         /// <summary>
-        /// Код валюти рахунку відповідно ISO 4217
+        /// Account currency code according to ISO 4217
         /// </summary>
         public int CurrencyCodeB { get; set; }
 
         /// <summary>
-        /// Час курсу в секундах в форматі Unix time
+        /// Course time in seconds in Unix time format
         /// </summary>
         public long Date { get; set; }
 
         /// <summary>
-        /// Курс продажу
+        /// Sale rate
         /// </summary>
         public float RateSell { get; set; }
 
         /// <summary>
-        /// Курс покупки
+        /// Buy rate
         /// </summary>
         public float RateBuy { get; set; }
 
         /// <summary>
-        /// Крос-курс
+        /// Cross Rate
         /// </summary>
         public float RateCross { get; set; }
     }

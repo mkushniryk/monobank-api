@@ -1,24 +1,24 @@
 ﻿using System.Collections.Generic;
 
-namespace Sentinelab.Monobank.Api.Models
+namespace Monobank.Api.Client.Models
 {
     /// <summary>
-    /// Опис клієнта та його рахунків
+    /// Description of the client and his accounts
     /// </summary>
-    public class UserInfo
+    public class ClientInfo
     {
         /// <summary>
-        /// Ім'я клієнта
+        /// Client name
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// URL для отримання інформації про нову транзакцію
+        /// URL to get information about the new transaction
         /// </summary>
         public string WebHookUrl { get; set; }
 
         /// <summary>
-        /// Перелік доступних рахунків
+        /// List of available accounts
         /// </summary>
         public IEnumerable<Account> Accounts { get; set; }
     }

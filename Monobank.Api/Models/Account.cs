@@ -1,32 +1,32 @@
-﻿namespace Sentinelab.Monobank.Api.Models
+﻿namespace Monobank.Api.Client.Models
 {
     /// <summary>
-    /// Рахунок
+    /// Client account
     /// </summary>
     public class Account
     {
         /// <summary>
-        /// Ідентифікатор рахунку
+        /// Account Id
         /// </summary>
         public string Id { get; set; }
 
         /// <summary>
-        /// Баланс рахунку в мінімальних одиницях валюти (копійках, центах)
+        /// Account balance in minimum currency units
         /// </summary>
         public long Balance { get; set; }
 
         /// <summary>
-        /// Кредитний ліміт
+        /// Account credit limit
         /// </summary>
         public long CreditLimit { get; set; }
 
         /// <summary>
-        /// Код валюти рахунку відповідно ISO 4217
+        /// Account currency code according to ISO 4217
         /// </summary>
         public int CurrencyCode { get; set; }
 
         /// <summary>
-        /// Тип кешбеку який нараховується на рахунок: None, UAH, Miles 
+        /// The type of cashback that is credited to the account: None, UAH, Miles
         /// </summary>
         public string CashbackType { get; set; }
     }

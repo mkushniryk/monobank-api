@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sentinelab.Monobank.Api.Exceptions
+namespace Monobank.Api.Client.Exceptions
 {
     public class MonobankException : Exception
     {

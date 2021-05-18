@@ -1,37 +1,37 @@
-﻿namespace Sentinelab.Monobank.Api.Models
+﻿namespace Monobank.Api.Client.Models
 {
     /// <summary>
-    /// Транзакція
+    /// Transaction
     /// </summary>
     public class StatementItem
     {
         /// <summary>
-        /// Унікальний id транзакції
+        /// Transaction Id
         /// </summary>
         public string Id { get; set; }
 
         /// <summary>
-        /// Час транзакції в секундах в форматі Unix time
+        /// Transaction time in seconds in Unix time format
         /// </summary>
         public long Time { get; set; }
 
         /// <summary>
-        /// Опис транзакцій
+        /// Transaction description
         /// </summary>
         public string Description { get; set; }
 
         /// <summary>
-        /// Код типу транзакції (Merchant Category Code), відповідно ISO 18245
+        /// Transaction type code (Merchant Category Code), according to ISO 18245
         /// </summary>
         public int Mcc { get; set; }
 
         /// <summary>
-        /// Статус блокування суми
+        /// Amount hold status
         /// </summary>
         public bool Hold { get; set; }
 
         /// <summary>
-        /// Сума у валюті рахунку в мінімальних одиницях валюти (копійках, центах)
+        /// Amount in the currency of the account in the minimum currency units
         /// </summary>
         public long Amount { get; set; }
 
@@ -59,5 +59,25 @@
         /// Баланс рахунку в мінімальних одиницях валюти (копійках, центах)
         /// </summary>
         public long Balance { get; set; }
+
+        /// <summary>
+        /// User-entered comment on the transfer. If not specified, the field will be missing
+        /// </summary>
+        public string Comment { get; set; }
+
+        /// <summary>
+        /// Receipt number for https://check.gov.ua
+        /// </summary>
+        public string ReceiptId { get; set; }
+
+        /// <summary>
+        /// UDRPOU of the counterparty, present only for the elements of the private individual
+        /// </summary>
+        public string CounterEdrpou { get; set; }
+
+        /// <summary>
+        /// Counterparty IBAN, present only for the elements of the private individual
+        /// </summary>
+        public string CounterIban { get; set; }
     }
 }

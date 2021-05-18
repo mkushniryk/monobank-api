@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sentinelab.Monobank.Api.Extensions
+namespace Monobank.Api.Client.Extensions
 {
     public static class DateTimeExtensions
     {

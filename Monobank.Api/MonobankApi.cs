@@ -1,22 +1,25 @@
-﻿using Sentinelab.Monobank.Api.Abstract;
-using Sentinelab.Monobank.Api.Concrete;
+﻿using System.Threading.Tasks;
+using System.Collections.Generic;
+using Monobank.Api.Client.Models;
+using Monobank.Api.Client.Clients;
+using Monobank.Api.Client.Abstractions;
 
-namespace Sentinelab.Monobank.Api
+namespace Monobank.Api.Client
 {
-    public class MonobankApi
+    public static class MonobankApi
     {
-        public IMonoPublicClient PublicClient { get; }
-        public IMonoPersonalClient PersonalClient { get; }
-
-        public MonobankApi()
+        public static IMonobankClient Create(string token)
         {
-            PublicClient = new MonoPublicClient();
+            var client = new MonobankClient(token);
+            return client;
         }
 
-        public MonobankApi(string token) : this()
+        public static async Task<IEnumerable<CurrencyInfo>> GetCurrenciesAsync()
         {
-            PersonalClient = new MonoPersonalClient(token);
+            var client = new RestApiClient(Constants.ApiGatewayPath);
+
+            var response = (await client.ExecuteAsync<IEnumerable<CurrencyInfo>>(Constants.GetCurrencyResource, RestSharp.Method.GET)).Data;
+            return response;
         }
     }
 }
-  

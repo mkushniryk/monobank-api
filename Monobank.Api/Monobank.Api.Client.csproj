@@ -1,15 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>TertAlex</Authors>
+    <Authors>Mykola Kushniryk</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>Sentinelab.Monobank.Api</PackageId>
-    <Company>Sentinelab</Company>
-    <AssemblyName>Sentinelab.Monobank.Api</AssemblyName>
-    <RootNamespace>Sentinelab.Monobank.Api</RootNamespace>
-    <RepositoryUrl>https://github.com/TertAlex/Monobank.Api</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/TertAlex/Monobank.Api</PackageProjectUrl>
+    <PackageId>Monobank.Api.Client</PackageId>
+    <AssemblyName>Monobank.Api.Client</AssemblyName>
+    <RootNamespace>Monobank.Api.Client</RootNamespace>
     <PackageIconUrl>https://api.monobank.ua/docs/images/logo.png</PackageIconUrl>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <FileVersion>1.0.1.0</FileVersion>
@@ -18,6 +15,7 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
   </ItemGroup>
 
 </Project>

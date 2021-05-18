@@ -1,11 +1,11 @@
 ﻿using Newtonsoft.Json;
 
-namespace Sentinelab.Monobank.Api.Models
+namespace Monobank.Api.Client.Models
 {
     public class Error
     {
         /// <summary>
-        /// Текст помилки для кінцевого користувача
+        /// Error text for the end user
         /// </summary>
         [JsonProperty("errorDescription")]
         public string Description { get; set; }
