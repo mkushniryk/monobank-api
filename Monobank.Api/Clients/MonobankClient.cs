@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 using Monobank.Api.Client.Models;
 using Monobank.Api.Client.Models.Requests;
 using Monobank.Api.Client.Extensions;
